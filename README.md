@@ -1,3 +1,5 @@
+# WorldEdit Documentation
+
 ## Expression Variables
 The following variables can be used in command expressions:
 
