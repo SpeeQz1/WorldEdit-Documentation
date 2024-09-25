@@ -6,12 +6,12 @@ Based on the [WorldEdit](https://github.com/AnzhelikaO/WorldEdit) plugin fork by
 The following variables can be used in command expressions:
 
 - `t`, `tile`: <br />
-&emsp;tile ID (0 for no tile) <br />
-&emsp;checks if it is a tile (true/false) 
+   - tile ID (0 for no tile) <br />
+   - checks if it is a tile (true/false) 
 - `nt`, `ntile`: checks if it is not a tile (true/false)
 - `w`, `wall`: <br />
-&emsp;wall ID (0 for no wall) <br />
-&emsp;checks if it is a wall (true/false)
+   - wall ID (0 for no wall) <br />
+   - checks if it is a wall (true/false)
 - `nw`, `nwall`: checks if it is not a wall (true/false)
 - `x`, `y`: coordinates
 - `lh`, `honey`, `nlh`, `nhoney`: liquid is honey (true/false)
