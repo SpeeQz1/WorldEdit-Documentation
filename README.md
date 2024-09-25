@@ -1,5 +1,7 @@
 # WorldEdit Documentation
 
+Based on the [WorldEdit](https://github.com/AnzhelikaO/WorldEdit) plugin fork by [Anzhelika0](https://github.com/AnzhelikaO).
+
 ## Expression Variables
 The following variables can be used in command expressions:
 
