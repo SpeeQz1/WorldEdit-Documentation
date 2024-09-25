@@ -10,7 +10,7 @@ The following variables can be used in command expressions:
 - `w`, `wall`: <br />
 &emsp;wall ID (0 for no wall) <br />
 &emsp;checks if it is a wall (true/false)
-- `nw`, `nwall`: no wall (true/false)
+- `nw`, `nwall`: checks if it is not a wall (true/false)
 - `x`, `y`: coordinates
 - `lh`, `honey`, `nlh`, `nhoney`: liquid is honey (true/false)
 - `ll`, `lava`, `nll`, `nlava`: liquid is lava (true/false)
