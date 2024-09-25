@@ -4,7 +4,18 @@ Based on the [WorldEdit](https://github.com/AnzhelikaO/WorldEdit) plugin fork by
 
 ## Sections
 
-Link to the sample section: [Link Text](#selection-commands).
+- [Expression Variables](#expression-variables)
+- [Selection Commands](#selection-commands)
+- [Clipboard Operations](#clipboard-operations)
+- [Block Manipulation](#block-manipulation)
+- [Biome and Environment](#biome-and-environment)
+- [Aesthetic Modifications](#aesthetic-modifications)
+- [Advanced Shaping](#advanced-shaping)
+- [Wire and Mechanisms](#wire-and-mechanisms)
+- [Fixes and Cleanup](#fixes-and-cleanup)
+- [Schematic Operations](#schematic-operations)
+- [History Management](#history-management)
+- [Miscellaneous](#miscellaneous)
 
 <a id="expression-variables"></a>
 ## Expression Variables
@@ -60,6 +71,7 @@ Example:
 //magicwand => t == 1 || t == 2
 ```
 
+<a id="clipboard-operations"></a>
 ## Clipboard Operations
 //copy, //c - Copies the selection to the clipboard <br />
 //cut - Copies the selection to the clipboard, then deletes it <br />
@@ -79,6 +91,7 @@ Example:
 //spaste -t -wp => w != 0
 ```
 
+<a id="block-manipulation"></a>
 ## Block Manipulation
 //set <tile> [=> expr] - Sets tiles in the selection <br />
 //setwall, //swa <wall> [=> expr] - Sets walls in the selection <br />
@@ -99,6 +112,7 @@ Example:
 //coat echo => t != 0
 ```
 
+<a id="biome-and-environment"></a>
 ## Biome and Environment
 //biome <biome1> <biome2> - Converts biomes in the selection (biomes: forest, corruption, crimson, hallow, jungle, mushroom, snow, desert, ocean, hell) <br />
 //flood <liquid> - Floods liquids in the selection (liquids: water, lava, honey) <br />
@@ -117,6 +131,7 @@ Example:
 //setgrass jungle => t == 0
 ```
 
+<a id="aesthetic-modifications"></a>
 ## Aesthetic Modifications
 //paint, //pa <color> [=> expr] - Paints tiles in the selection <br />
 //paintwall, //paw <color> [=> expr] - Paints walls in the selection <br />
@@ -135,6 +150,7 @@ Example:
 //smooth => t == 1 || t == 2
 ```
 
+<a id="advanced-shaping"></a>
 ## Advanced Shaping
 //shape, //shapefill, //shapef <shape> [rotate] [flip] <tile/wall> [=> expr] - Draws shapes in the selection <br />
 //shapewall, //shapew, //shapewallfill, //shapewf <shape> [rotate] [flip] <wall> [=> expr] - Draws shapes with walls in the selection <br />
@@ -152,7 +168,8 @@ Example:
 //text Hello World
 ```
 
-## Wire and Mechanism
+<a id="wire-and-mechanisms"></a>
+## Wire and Mechanisms
 //actuator <on/off> [=> expr] - Sets actuators in the selection <br />
 //setwire, //swi <wire> <state> [=> expr] - Sets wires in the selection (wires: 1, 2, 3, 4; states: on, off) <br />
 //inactive, //ia <status> [=> expr] - Sets the inactive status in the selection (status: on, off, reverse) <br />
@@ -165,6 +182,7 @@ Example:
 //setwire 1 on => t == 1 || t == 2
 ```
 
+<a id="fixes-and-cleanup"></a>
 ## Fixes and Cleanup
 //fixghosts - Fixes invisible signs, chests and item frames <br />
 //fixhalves - Fixes half blocks in the selection <br />
@@ -179,6 +197,7 @@ Example:
 //killempty all
 ```
 
+<a id="schematic-operations"></a>
 ## Schematic Operations
 //schematic, //schem, //sc <subcommand> - Manages worldedit schematics <br />
 Subcommands: <br />
@@ -203,6 +222,7 @@ Example:
 //size schematic myhouse
 ```
 
+<a id="history-management"></a>
 ## History Management
 //undo [steps] [account] - Undoes worldedit actions <br />
 //redo [steps] [account] - Redoes worldedit actions <br />
@@ -215,6 +235,7 @@ Example:
 //redo 3
 ```
 
+<a id="miscellaneous"></a>
 ## Miscellaneous
 //move <right> <down> [=> expr] - Moves tiles from the selection to new area <br />
 //activate <type> - Activates non-working objects <br />
