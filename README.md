@@ -30,14 +30,14 @@ The following variables can be used in command expressions:
 
 ## Selection Commands
 //all - Sets the selection to the entire world <br />
-//point1 [x] [y] - Sets the first point of the selection <br />
-//point2 [x] [y] - Sets the second point of the selection <br />
-//select <type> - Sets the selection function (e.g., normal, altcheckers, checkers, ellipse, border, outline) <br />
+//point1, //p1 [x] [y] - Sets the first point of the selection <br />
+//point2, //p2 [x] [y] - Sets the second point of the selection <br />
+//select <type> - Sets the selection function (types: normal, altcheckers, checkers, ellipse, border, outline) <br />
 //region [name] - Selects a region as a worldedit selection <br />
 //near <radius> - Sets the selection to a radius around you <br />
-//shift <direction> <amount> - Shifts the selection <br />
-//resize <direction(s)> <amount> - Resizes the selection <br />
-//magicwand [<X> <Y>] => expr - Creates selection from contiguous tiles matching expression <br />
+//shift <direction> <amount> - Shifts the selection (directions: u, d, l, r) <br />
+//resize <direction(s)> <amount> - Resizes the selection (directions: u, d, l, r) <br />
+//magicwand, //mwand, //mw [<X> <Y>] => expr - Creates selection from contiguous tiles matching expression <br />
 
 Expressions are not used in most of these commands, except for //magicwand.
 
@@ -51,12 +51,12 @@ Example:
 ```
 
 ## Clipboard Operations
-//copy - Copies the selection to the clipboard <br />
+//copy, //c - Copies the selection to the clipboard <br />
 //cut - Copies the selection to the clipboard, then deletes it <br />
-//paste [alignment] [-f] [=> expr] - Pastes the clipboard to the selection <br />
-//spaste [alignment] [-flag -flag ...] [=> expr] - Pastes the clipboard with specific conditions <br />
-//flip <direction> - Flips the clipboard <br />
-//rotate <angle> - Rotates the clipboard <br />
+//paste, //p [alignment] [-f] [=> expr] - Pastes the clipboard to the selection (alignments: l, r, t, b) <br />
+//spaste, //sp [alignment] [-flag -flag ...] [=> expr] - Pastes the clipboard with specific conditions (flags: -t, -tp, -et, -w, -wp, -wi, -l) <br />
+//flip <direction> - Flips the clipboard (directions: x, y) <br />
+//rotate <angle> - Rotates the clipboard (angles: 90, 180, 270) <br />
 //scale <+/-> <amount> - Scales the clipboard <br />
 
 Expressions in //paste and //spaste allow conditional pasting based on existing blocks.
@@ -71,13 +71,13 @@ Example:
 
 ## Block Manipulation
 //set <tile> [=> expr] - Sets tiles in the selection <br />
-//setwall <wall> [=> expr] - Sets walls in the selection <br />
-//replace <from> <to> [=> expr] - Replaces tiles in the selection <br />
-//replacewall <from> <to> [=> expr] - Replaces walls in the selection <br />
+//setwall, //swa <wall> [=> expr] - Sets walls in the selection <br />
+//replace, //rep <from> <to> [=> expr] - Replaces tiles in the selection <br />
+//replacewall, //repw <from> <to> [=> expr] - Replaces walls in the selection <br />
 //fill <tile> [=> expr] - Fills the selection with the specified tile <br />
-//fillwall <wall> [=> expr] - Fills the selection with the specified wall <br />
-//coat [-]<echo|illuminant|none> [=> expr] - Coats tiles in the selection <br />
-//coatwalls [-]<echo|illuminant|none> [=> expr] - Coats walls in the selection <br />
+//fillwall, //fillw <wall> [=> expr] - Fills the selection with the specified wall <br />
+//coat, //co [-]<echo|e|illuminant|i|none|n> [=> expr] - Coats tiles in the selection <br />
+//coatwalls, //coatwall, //cw [-]<echo|e|illuminant|i|none|n> [=> expr] - Coats walls in the selection <br />
 
 Expressions allow conditional execution based on existing blocks.
 
@@ -90,12 +90,12 @@ Example:
 ```
 
 ## Biome and Environment
-//biome <biome1> <biome2> - Converts biomes in the selection <br />
-//flood <liquid> - Floods liquids in the selection <br />
+//biome <biome1> <biome2> - Converts biomes in the selection (biomes: forest, corruption, crimson, hallow, jungle, mushroom, snow, desert, ocean, hell) <br />
+//flood <liquid> - Floods liquids in the selection (liquids: water, lava, honey) <br />
 //drain - Drains liquids in the selection <br />
 //mow - Mows grass, thorns, and vines in the selection <br />
 //fixgrass - Fixes suffocated grass in the selection <br />
-//setgrass <grass> [=> expr] - Sets certain grass in the selection <br />
+//setgrass <grass> [=> expr] - Sets certain grass in the selection (grass types: forest, corruption, crimson, hallow, jungle, mushroom) <br />
 
 Expressions are used in the //setgrass command.
 
@@ -108,13 +108,13 @@ Example:
 ```
 
 ## Aesthetic Modifications
-//paint <color> [=> expr] - Paints tiles in the selection <br />
-//paintwall <color> [=> expr] - Paints walls in the selection <br />
-//slope <type> [=> expr] - Slopes tiles in the selection <br />
-//delslope [type] [=> expr] - Removes slopes in the selection <br />
+//paint, //pa <color> [=> expr] - Paints tiles in the selection <br />
+//paintwall, //paw <color> [=> expr] - Paints walls in the selection <br />
+//slope <type> [=> expr] - Slopes tiles in the selection (types: none, t, tr, tl, br, bl) <br />
+//delslope, //delslopes, //dslope, //dslopes [type] [=> expr] - Removes slopes in the selection <br />
 //smooth [=> expr] - Smooths blocks in the selection <br />
-//outline <tile> <color> <state> [=> expr] - Sets block outline around blocks <br />
-//outlinewall <wall> [color] [=> expr] - Sets wall outline around walls <br />
+//outline, //ol <tile> <color> <state> [=> expr] - Sets block outline around blocks (states: active, inactive) <br />
+//outlinewall, //olw <wall> [color] [=> expr] - Sets wall outline around walls <br />
 
 Expressions allow conditional application based on existing blocks or positions.
 
@@ -126,10 +126,11 @@ Example:
 ```
 
 ## Advanced Shaping
-//shape <shape> [rotate] [flip] <tile/wall> [=> expr] - Draws shapes in the selection <br />
-//shapefill <shape> [rotate] [flip] <tile/wall> [=> expr] - Draws filled shapes in the selection <br />
-//shapewall <shape> [rotate] [flip] <wall> [=> expr] - Draws shapes with walls in the selection <br />
-//shapewallfill <shape> [rotate] [flip] <wall> [=> expr] - Draws filled shapes with walls in the selection <br />
+//shape, //shapefill, //shapef <shape> [rotate] [flip] <tile/wall> [=> expr] - Draws shapes in the selection <br />
+//shapewall, //shapew, //shapewallfill, //shapewf <shape> [rotate] [flip] <wall> [=> expr] - Draws shapes with walls in the selection <br />
+(Shapes: line/l, rectangle/r, ellipse/e, isoscelestriangle/it, righttriangle/rt) <br />
+(Rotate types for triangles: up/u, down/d, left/l, right/r) <br />
+(Flip types for right triangles: left/l, right/r) <br />
 //text <text> - Creates text with alphabet statues in the selection <br />
 
 Expressions in shape commands allow conditional shape drawing.
@@ -143,8 +144,8 @@ Example:
 
 ## Wire and Mechanism
 //actuator <on/off> [=> expr] - Sets actuators in the selection <br />
-//setwire <wire> <state> [=> expr] - Sets wires in the selection <br /> 
-//inactive <status> [=> expr] - Sets the inactive status in the selection <br />
+//setwire, //swi <wire> <state> [=> expr] - Sets wires in the selection (wires: 1, 2, 3, 4; states: on, off) <br />
+//inactive, //ia <status> [=> expr] - Sets the inactive status in the selection (status: on, off, reverse) <br />
 
 Expressions allow conditional application of mechanisms.
 
@@ -169,8 +170,19 @@ Example:
 ```
 
 ## Schematic Operations
-//schematic <subcommand> - Manages worldedit schematics (save, load, delete, list, copysave, paste) <br />
-//size <clipboard/schematic> [name] - Shows size of clipboard or schematic <br />
+//schematic, //schem, //sc <subcommand> - Manages worldedit schematics <br />
+Subcommands: <br />
+
+* delete, del <name> <br />
+* list [page] <br />
+* load, l <name> <br />
+* save, s [-force/-f] <name> <br />
+* copysave, cs [-force/-f] <name> <br />
+* paste, p [alignment] [-f] [=> expr] - Pastes the clipboard to the selection <br />
+(Alignment options: l, r, t, b or any combination like lt, rb. l=left, r=right, t=top, b=bottom)
+
+//size <clipboard/c> [user name] - Shows size of clipboard <br />
+//size <schematic/s> <name> - Shows size of schematic <br />
 
 Expressions are not used in these commands.
 
@@ -195,7 +207,8 @@ Example:
 
 ## Miscellaneous
 //move <right> <down> [=> expr] - Moves tiles from the selection to new area <br />
-//activate <sign/chest/itemframe/sensor/dummy/weaponrack/pylon/mannequin/hatrack/foodplate/all> - Activates non-working objects <br />
+//activate <type> - Activates non-working objects <br />
+(Types: sign/s, chest/c, itemframe/i/frame, sensor/l/logic, dummy/d/targetdummy, weaponrack/w, pylon/p, mannequin/m, hatrack/h, foodplate/f/plate, all/a) <br />
 
 Expressions can be used in the //move command.
 
