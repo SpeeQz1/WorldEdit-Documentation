@@ -2,6 +2,11 @@
 
 Based on the [WorldEdit](https://github.com/AnzhelikaO/WorldEdit) plugin fork by [Anzhelika0](https://github.com/AnzhelikaO).
 
+## Sections
+
+Link to the sample section: [Link Text](#selection-commands).
+
+<a id="expression-variables"></a>
 ## Expression Variables
 The following variables can be used in command expressions:
 
@@ -32,6 +37,7 @@ The following variables can be used in command expressions:
 - `a`, `active`, `na`, `nactive`: tile active/inactive state
 - `ac`, `actuator`, `nac`, `nactuator`: actuator present/not present (true/false)
 
+<a id="selection-commands"></a>
 ## Selection Commands
 //all - Sets the selection to the entire world <br />
 //point1, //p1 [x] [y] - Sets the first point of the selection <br />
