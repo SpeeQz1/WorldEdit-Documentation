@@ -248,5 +248,3 @@ Example:
 //move 10 5 => t != 0
 //activate all
 ```
-
-This updated documentation includes corrections, additional commands, and more accurate descriptions based on the provided source code.
