@@ -1,13 +1,15 @@
-Here is an updated version of the WorldEdit documentation, incorporating corrections and additions based on the provided source code:
-
 # WorldEdit Documentation
 
 ## Expression Variables
 The following variables can be used in command expressions:
 
-- `t`, `tile`: tile is active (true/false)
-- `nt`, `ntile`: tile is not active (true/false)
-- `w`, `wall`: wall ID (0 for no wall)
+- `t`, `tile`: <br />
+tile ID (0 for no tile) <br />
+checks if it is a tile (true/false) 
+- `nt`, `ntile`: checks if it is not a tile (true/false)
+- `w`, `wall`: <br />
+wall ID (0 for no wall) <br />
+checks if it is a wall (true/false)
 - `nw`, `nwall`: no wall (true/false)
 - `x`, `y`: coordinates
 - `lh`, `honey`, `nlh`, `nhoney`: liquid is honey (true/false)
