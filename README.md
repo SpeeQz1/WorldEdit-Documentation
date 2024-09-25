@@ -4,12 +4,12 @@
 The following variables can be used in command expressions:
 
 - `t`, `tile`: <br />
-tile ID (0 for no tile) <br />
-checks if it is a tile (true/false) 
+&emsp;tile ID (0 for no tile) <br />
+&emsp;checks if it is a tile (true/false) 
 - `nt`, `ntile`: checks if it is not a tile (true/false)
 - `w`, `wall`: <br />
-wall ID (0 for no wall) <br />
-checks if it is a wall (true/false)
+&emsp;wall ID (0 for no wall) <br />
+&emsp;checks if it is a wall (true/false)
 - `nw`, `nwall`: no wall (true/false)
 - `x`, `y`: coordinates
 - `lh`, `honey`, `nlh`, `nhoney`: liquid is honey (true/false)
