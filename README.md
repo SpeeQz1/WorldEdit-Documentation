@@ -2,6 +2,8 @@
 
 Based on the [WorldEdit](https://github.com/AnzhelikaO/WorldEdit) plugin fork by [Anzhelika0](https://github.com/AnzhelikaO).
 
+Note: The Grand Design can be used to interact with certain commands such as `//p1`.
+
 ## Sections
 
 - [Expression Variables](#expression-variables)
