@@ -7,21 +7,21 @@ Note: The Grand Design can be used to interact with certain commands such as `//
 
 ## Sections
 
-- [Expression Variables](#expression-variables)
-- [Selection Commands](#selection-commands)
-- [Clipboard Operations](#clipboard-operations)
-- [Block Manipulation](#block-manipulation)
-- [Biome and Environment](#biome-and-environment)
-- [Aesthetic Modifications](#aesthetic-modifications)
-- [Advanced Shaping](#advanced-shaping)
-- [Wire and Mechanisms](#wire-and-mechanisms)
-- [Fixes and Cleanup](#fixes-and-cleanup)
-- [Schematic Operations](#schematic-operations)
-- [History Management](#history-management)
-- [Miscellaneous](#miscellaneous)
+- [1. Expression Variables](#expression-variables)
+- [2. Selection Commands](#selection-commands)
+- [3. Clipboard Operations](#clipboard-operations)
+- [4. Block Manipulation](#block-manipulation)
+- [5. Biome and Environment](#biome-and-environment)
+- [6. Aesthetic Modifications](#aesthetic-modifications)
+- [7. Advanced Shaping](#advanced-shaping)
+- [8. Wire and Mechanisms](#wire-and-mechanisms)
+- [9. Fixes and Cleanup](#fixes-and-cleanup)
+- [10. Schematic Operations](#schematic-operations)
+- [11. History Management](#history-management)
+- [12. Miscellaneous](#miscellaneous)
 
 <a id="expression-variables"></a>
-## Expression Variables
+## 1. Expression Variables
 [Back to Beginning](#worldedit-documentation)  
 
 The following variables can be used in command expressions:
@@ -54,7 +54,7 @@ The following variables can be used in command expressions:
 - `ac`, `actuator`, `nac`, `nactuator`: actuator present/not present (true/false)
 
 <a id="selection-commands"></a>
-## Selection Commands
+## 2. Selection Commands
 [Back to Beginning](#worldedit-documentation)  
 
 //all - Sets the selection to the entire world <br />
@@ -79,7 +79,7 @@ Example:
 ```
 
 <a id="clipboard-operations"></a>
-## Clipboard Operations
+## 3. Clipboard Operations
 [Back to Beginning](#worldedit-documentation)  
 
 //copy, //c - Copies the selection to the clipboard <br />
@@ -101,7 +101,7 @@ Example:
 ```
 
 <a id="block-manipulation"></a>
-## Block Manipulation
+## 4. Block Manipulation
 [Back to Beginning](#worldedit-documentation)  
 
 //set <tile> [=> expr] - Sets tiles in the selection <br />
@@ -124,7 +124,7 @@ Example:
 ```
 
 <a id="biome-and-environment"></a>
-## Biome and Environment
+## 5. Biome and Environment
 [Back to Beginning](#worldedit-documentation)  
 
 //biome <biome1> <biome2> - Converts biomes in the selection (biomes: forest, corruption, crimson, hallow, jungle, mushroom, snow, desert, ocean, hell) <br />
@@ -145,7 +145,7 @@ Example:
 ```
 
 <a id="aesthetic-modifications"></a>
-## Aesthetic Modifications
+## 6. Aesthetic Modifications
 [Back to Beginning](#worldedit-documentation)  
 
 //paint, //pa <color> [=> expr] - Paints tiles in the selection <br />
@@ -166,7 +166,7 @@ Example:
 ```
 
 <a id="advanced-shaping"></a>
-## Advanced Shaping
+## 7. Advanced Shaping
 [Back to Beginning](#worldedit-documentation)  
 
 //shape, //shapefill, //shapef <shape> [rotate] [flip] <tile/wall> [=> expr] - Draws shapes in the selection <br />
@@ -186,7 +186,7 @@ Example:
 ```
 
 <a id="wire-and-mechanisms"></a>
-## Wire and Mechanisms
+## 8. Wire and Mechanisms
 [Back to Beginning](#worldedit-documentation)  
 
 //actuator <on/off> [=> expr] - Sets actuators in the selection <br />
@@ -202,7 +202,7 @@ Example:
 ```
 
 <a id="fixes-and-cleanup"></a>
-## Fixes and Cleanup
+## 9. Fixes and Cleanup
 [Back to Beginning](#worldedit-documentation)  
 
 //fixghosts - Fixes invisible signs, chests and item frames <br />
@@ -219,7 +219,7 @@ Example:
 ```
 
 <a id="schematic-operations"></a>
-## Schematic Operations
+## 10. Schematic Operations
 [Back to Beginning](#worldedit-documentation)  
 
 //schematic, //schem, //sc <subcommand> - Manages worldedit schematics <br />
@@ -246,7 +246,7 @@ Example:
 ```
 
 <a id="history-management"></a>
-## History Management
+## 11. History Management
 [Back to Beginning](#worldedit-documentation)  
 
 //undo [steps] [account] - Undoes worldedit actions <br />
@@ -261,7 +261,7 @@ Example:
 ```
 
 <a id="miscellaneous"></a>
-## Miscellaneous
+## 12. Miscellaneous
 [Back to Beginning](#worldedit-documentation)  
 
 //move <right> <down> [=> expr] - Moves tiles from the selection to new area <br />
