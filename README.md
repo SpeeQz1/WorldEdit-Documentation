@@ -1,3 +1,4 @@
+<a id="worldedit-documentation"></a>
 # WorldEdit Documentation
 
 Based on the [WorldEdit](https://github.com/AnzhelikaO/WorldEdit) plugin fork by [Anzhelika0](https://github.com/AnzhelikaO).
@@ -21,6 +22,8 @@ Note: The Grand Design can be used to interact with certain commands such as `//
 
 <a id="expression-variables"></a>
 ## Expression Variables
+[Back to Beginning](#expression-variables)  
+
 The following variables can be used in command expressions:
 
 - `t`, `tile`: <br />
@@ -52,6 +55,8 @@ The following variables can be used in command expressions:
 
 <a id="selection-commands"></a>
 ## Selection Commands
+[Back to Beginning](#expression-variables)  
+
 //all - Sets the selection to the entire world <br />
 //point1, //p1 [x] [y] - Sets the first point of the selection <br />
 //point2, //p2 [x] [y] - Sets the second point of the selection <br />
@@ -75,6 +80,8 @@ Example:
 
 <a id="clipboard-operations"></a>
 ## Clipboard Operations
+[Back to Beginning](#expression-variables)  
+
 //copy, //c - Copies the selection to the clipboard <br />
 //cut - Copies the selection to the clipboard, then deletes it <br />
 //paste, //p [alignment] [-f] [=> expr] - Pastes the clipboard to the selection (alignments: l, r, t, b) <br />
@@ -95,6 +102,8 @@ Example:
 
 <a id="block-manipulation"></a>
 ## Block Manipulation
+[Back to Beginning](#expression-variables)  
+
 //set <tile> [=> expr] - Sets tiles in the selection <br />
 //setwall, //swa <wall> [=> expr] - Sets walls in the selection <br />
 //replace, //rep <from> <to> [=> expr] - Replaces tiles in the selection <br />
@@ -116,6 +125,8 @@ Example:
 
 <a id="biome-and-environment"></a>
 ## Biome and Environment
+[Back to Beginning](#expression-variables)  
+
 //biome <biome1> <biome2> - Converts biomes in the selection (biomes: forest, corruption, crimson, hallow, jungle, mushroom, snow, desert, ocean, hell) <br />
 //flood <liquid> - Floods liquids in the selection (liquids: water, lava, honey) <br />
 //drain - Drains liquids in the selection <br />
@@ -135,6 +146,8 @@ Example:
 
 <a id="aesthetic-modifications"></a>
 ## Aesthetic Modifications
+[Back to Beginning](#expression-variables)  
+
 //paint, //pa <color> [=> expr] - Paints tiles in the selection <br />
 //paintwall, //paw <color> [=> expr] - Paints walls in the selection <br />
 //slope <type> [=> expr] - Slopes tiles in the selection (types: none, t, tr, tl, br, bl) <br />
@@ -154,6 +167,8 @@ Example:
 
 <a id="advanced-shaping"></a>
 ## Advanced Shaping
+[Back to Beginning](#expression-variables)  
+
 //shape, //shapefill, //shapef <shape> [rotate] [flip] <tile/wall> [=> expr] - Draws shapes in the selection <br />
 //shapewall, //shapew, //shapewallfill, //shapewf <shape> [rotate] [flip] <wall> [=> expr] - Draws shapes with walls in the selection <br />
 (Shapes: line/l, rectangle/r, ellipse/e, isoscelestriangle/it, righttriangle/rt) <br />
@@ -172,6 +187,8 @@ Example:
 
 <a id="wire-and-mechanisms"></a>
 ## Wire and Mechanisms
+[Back to Beginning](#expression-variables)  
+
 //actuator <on/off> [=> expr] - Sets actuators in the selection <br />
 //setwire, //swi <wire> <state> [=> expr] - Sets wires in the selection (wires: 1, 2, 3, 4; states: on, off) <br />
 //inactive, //ia <status> [=> expr] - Sets the inactive status in the selection (status: on, off, reverse) <br />
@@ -186,6 +203,8 @@ Example:
 
 <a id="fixes-and-cleanup"></a>
 ## Fixes and Cleanup
+[Back to Beginning](#expression-variables)  
+
 //fixghosts - Fixes invisible signs, chests and item frames <br />
 //fixhalves - Fixes half blocks in the selection <br />
 //fixslopes - Fixes covered slopes in the selection <br />
@@ -201,6 +220,8 @@ Example:
 
 <a id="schematic-operations"></a>
 ## Schematic Operations
+[Back to Beginning](#expression-variables)  
+
 //schematic, //schem, //sc <subcommand> - Manages worldedit schematics <br />
 Subcommands: <br />
 
@@ -226,6 +247,8 @@ Example:
 
 <a id="history-management"></a>
 ## History Management
+[Back to Beginning](#expression-variables)  
+
 //undo [steps] [account] - Undoes worldedit actions <br />
 //redo [steps] [account] - Redoes worldedit actions <br />
 
@@ -239,6 +262,8 @@ Example:
 
 <a id="miscellaneous"></a>
 ## Miscellaneous
+[Back to Beginning](#expression-variables)  
+
 //move <right> <down> [=> expr] - Moves tiles from the selection to new area <br />
 //activate <type> - Activates non-working objects <br />
 (Types: sign/s, chest/c, itemframe/i/frame, sensor/l/logic, dummy/d/targetdummy, weaponrack/w, pylon/p, mannequin/m, hatrack/h, foodplate/f/plate, all/a) <br />
